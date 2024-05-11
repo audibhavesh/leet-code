@@ -1,8 +1,5 @@
 package problems
 
-import timeIt
-import kotlin.math.cbrt
-
 //3352
 fun reverseVowels(s: String): String {
     var reverseVowel = ""

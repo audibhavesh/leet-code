@@ -1,3 +1,5 @@
+package problems
+
 fun <T> timeIt(message: String = "", block: () -> T): T {
     val start = System.currentTimeMillis()
     val r = block()
