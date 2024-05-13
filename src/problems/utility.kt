@@ -5,8 +5,18 @@ fun <T> timeIt(message: String = "", block: () -> T): T {
     val r = block()
     val end = System.currentTimeMillis()
     println("$message: ${end - start} ms")
-    if(r is String){
-        println("$r")
+    when (r) {
+        is String -> {
+            println("$r")
+        }
+
+        is Boolean -> {
+            println("$r")
+        }
+
+        is Int -> {
+            println("$r")
+        }
     }
     return r
 }
